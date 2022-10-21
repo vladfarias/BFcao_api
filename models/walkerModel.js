@@ -8,6 +8,13 @@ const walkerSchema = new mongoose.Schema({
         trim: true
     },
 
+    email:{
+        type: String,
+        required: [true, 'An email must be informed'],    
+        trim: true,
+        unique: true
+    },
+
     rate:{
         type: Number,
         default: 5.0
@@ -30,6 +37,12 @@ const walkerSchema = new mongoose.Schema({
         trim: true
     },
 
+    phone:{
+        type: Number,
+        required: [true, 'A phone must be informed'],    
+        trim: true
+    },
+
     photo:{
         type: String, 
         trim: true
@@ -37,3 +50,5 @@ const walkerSchema = new mongoose.Schema({
 
 });
 
+const Walker = mongoose.model('Walker', walkerSchema);
+module.exports = Walker;

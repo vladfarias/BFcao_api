@@ -39,7 +39,8 @@ const userSchema = new mongoose.Schema({
     email:{
         type: String,
         required: [true, 'An email must be informed'],    
-        trim: true
+        trim: true,
+        unique: true
     },
 
     password:{
@@ -71,7 +72,6 @@ const userSchema = new mongoose.Schema({
         trim: true
     },
 
-    
     phone:{
         type: Number,
         required: [true, 'A phone must be informed'],    
@@ -84,4 +84,7 @@ const userSchema = new mongoose.Schema({
     },
 
     dog: [dogSchema]
-})
+});
+
+const User = mongoose.model('User', userSchema);
+module.exports = User;
