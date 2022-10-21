@@ -12,8 +12,8 @@ mongoose.connect(DB, {
     useCreateIndex: true,
     useFindAndModify: false,
     useUnifiedTopology: true
-}).then((con)=>{
-    console.log(con.connection);
+}).then(()=>{
+    // console.log(con.connection); con is a parameter
     console.log('DB conection sucessfull!');
 });
 
