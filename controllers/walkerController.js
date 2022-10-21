@@ -1,5 +1,6 @@
 
-exports.getAllWalkers = function (req, res){
+exports.getAllWalker =  (req, res)=>{
+    console.log(req.message);
     res.status(500).json({
         status: 'error',
         message: 'This route is beeing buildin up...'
@@ -7,7 +8,8 @@ exports.getAllWalkers = function (req, res){
 
 };
 
- exports.createWalker = function (req, res){
+ exports.createWalker =  (req, res)=>{
+    console.log(req.message);
     res.status(500).json({
         status: 'error',
         message: 'This route is beeing buildin up...'
@@ -15,26 +17,27 @@ exports.getAllWalkers = function (req, res){
 
 };
 
- exports.getWalker = function (req, res){
+ exports.getWalker =  (req, res)=>{
+    console.log(req.message);
     res.status(500).json({
         status: 'error',
         message:'This route is beeing buildin up...'
     })
-
 };
 
 
-exports.updateWalker = function (req, res){
+exports.updateWalker =  (req, res)=>{
+    console.log(req.message);
     res.status(500).json({
         status:'error',
         message:'This route is beeing buildin up...'
-})
-
+    })
 };
 
- exports.deleteWalker = function(req, res){
-res.status(500).json({
-    status: 'error',
-    message:'This route is beeing buildin up...'
-})
+ exports.deleteWalker = (req, res) =>{
+    console.log(req.message);
+    res.status(500).json({
+        status: 'error',
+        message:'This route is beeing buildin up...'
+        })
 };

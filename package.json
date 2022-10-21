@@ -4,7 +4,8 @@
   "description": "\"api para o app BFCao - Passeador para cachorros\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js",
+    "start:prod": "set NODE_ENV=production&& nodemon server.js"
   },
   "keywords": [
     "api-nodejs"
@@ -13,8 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "mongoose": "^6.6.5",
+    "express": "^4.18.1",
+    "mongoose": "^5.13.15",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.20"
   }

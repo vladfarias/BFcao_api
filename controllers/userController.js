@@ -1,5 +1,6 @@
 
-exports.getAllUsers = function (req, res){
+exports.getAllUsers = (req, res)=>{
+    console.log(req.message);
     res.status(500).json({
         status: 'error',
         message: 'This route is beeing buildin up...'
@@ -7,7 +8,8 @@ exports.getAllUsers = function (req, res){
 
 };
 
- exports.createUser = function (req, res){
+ exports.createUser = (req, res)=>{
+    console.log(req.message);
     res.status(500).json({
         status: 'error',
         message: 'This route is beeing buildin up...'
@@ -15,7 +17,8 @@ exports.getAllUsers = function (req, res){
 
 };
 
- exports.getUser = function (req, res){
+ exports.getUser = (req, res)=>{
+    console.log(req.message);
     res.status(500).json({
         status: 'error',
         message:'This route is beeing buildin up...'
@@ -24,17 +27,19 @@ exports.getAllUsers = function (req, res){
 };
 
 
-exports.updateUser = function (req, res){
+exports.updateUser = (req, res)=>{
+    console.log(req.message);
     res.status(500).json({
         status:'error',
         message:'This route is beeing buildin up...'
-})
+    })
 
 };
 
- exports.deleteUser = function(req, res){
-res.status(500).json({
-    status: 'error',
-    message:'This route is beeing buildin up...'
-})
+ exports.deleteUser = (req, res)=>{
+    console.log(req.message);
+    res.status(500).json({
+        status: 'error',
+        message:'This route is beeing buildin up...'
+    })
 };
