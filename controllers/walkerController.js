@@ -1,13 +1,22 @@
 const Walker = require('./../models/walkerModel');
 
 
-exports.getAllWalker =  (req, res)=>{
-    console.log(req.message);
-    res.status(500).json({
-        status: 'error',
-        message: 'This route is beeing buildin up...'
-    })
-
+exports.getAllWalker = async (req, res)=>{
+    try{
+        const walkers = await Walker.find()
+        res.status(200).json({
+            status: 'succsess',
+            results: walkers.length,
+            data:{
+                walkers
+            }
+        })
+    }catch(err){
+        res.status(400).json({
+            status: 'fail',
+            message: ` Bad request ${err}`
+        })
+    }
 };
 
  exports.createWalker =  async (req, res)=>{
@@ -20,22 +29,34 @@ exports.getAllWalker =  (req, res)=>{
                 walker: newWalker
             }
         })
-        
+
     }catch(err){
         res.status(400).json({
             status:'fail',
-            message: err
+            message: `Bad request ${err}`
         })
     }
 
 };
 
- exports.getWalker =  (req, res)=>{
-    console.log(req.message);
-    res.status(500).json({
-        status: 'error',
-        message:'This route is beeing buildin up...'
-    })
+ exports.getWalker =  async (req, res)=>{
+
+    try{
+        const walker = await Walker.findById(req.params.id)
+
+        res.status(200).json({
+            status: 'success',
+            data: {
+                walker
+            }
+        });
+
+    }catch(err){
+        res.status(400).json({
+            status: 'fail',
+            message:`Bad request ${err}`
+        });
+    }
 };
 
 
