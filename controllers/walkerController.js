@@ -2,6 +2,7 @@ const Walker = require('./../models/walkerModel');
 
 
 exports.getAllWalker = async (req, res)=>{
+
     try{
         const walkers = await Walker.find()
         res.status(200).json({
@@ -10,14 +11,16 @@ exports.getAllWalker = async (req, res)=>{
             data:{
                 walkers
             }
-        })
+        });
+
     }catch(err){
         res.status(400).json({
             status: 'fail',
             message: ` Bad request ${err}`
-        })
-    }
+        });
+    };
 };
+
 
  exports.createWalker =  async (req, res)=>{
 
@@ -28,21 +31,22 @@ exports.getAllWalker = async (req, res)=>{
             data: {
                 walker: newWalker
             }
-        })
+        });
 
     }catch(err){
         res.status(400).json({
             status:'fail',
             message: `Bad request ${err}`
-        })
-    }
-
+        });
+    };
 };
+
 
  exports.getWalker =  async (req, res)=>{
 
     try{
         const walker = await Walker.findById(req.params.id)
+        //Walker.findOne({_id: req.params.id})
 
         res.status(200).json({
             status: 'success',
@@ -56,17 +60,33 @@ exports.getAllWalker = async (req, res)=>{
             status: 'fail',
             message:`Bad request ${err}`
         });
-    }
+    };
 };
 
 
-exports.updateWalker =  (req, res)=>{
-    console.log(req.message);
-    res.status(500).json({
-        status:'error',
-        message:'This route is beeing buildin up...'
-    })
+exports.updateWalker = async (req, res)=>{
+
+    try{
+        const walker = await Walker.findByIdAndUpdate(req.params.id, req.body, {
+            new: true,
+            runValidators: true // each time a documents is updated the validators specified in the schema will run again
+        });
+
+        res.status(200).json({
+            status: 'success',
+            data:{
+                walker
+            }
+        });
+
+    }catch(err){
+        res.status(400).json({
+            status:'fail',
+            message: `Bad request ${err}`
+        });
+    };
 };
+
 
  exports.deleteWalker = (req, res) =>{
     console.log(req.message);
