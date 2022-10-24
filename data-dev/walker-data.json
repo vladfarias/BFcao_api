@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "name": "Luís Augusto Brito",
+    "rate": 4.5,
+    "rides": 7,
+    "longitude": -46.7021017,
+    "latitude": -23.6162316,
+    "email": "lbrito@gmail.com",
+    "phone": 1196596336,
+    "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvaZRO4e-ZPGMQzFCsQGELsZXkMV3czmowFdFAKY1YdpyVbUWANW-7zkk1jiBmC9i20_o&usqp=CAU"
+  },
+
+  {
+    "id": 2,
+    "name": "Diego Luís Antonio Caldeira",
+    "rate": 4.5,
+    "rides": 7,
+    "longitude": -46.7011549,
+    "latitude": -23.4896731,
+    "email": "dlcaldeira@gmail.com",
+    "phone": 1196546882,
+    "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4vY-iZHyCpXKdMdDuQLOtPz3Wrs2fBpuK7P6B4u062os2l41Dxy2lvcv-X0rnaVCpcno&usqp=CAU"
+  },
+
+  {
+    "id": 3,
+    "name": "Vitor Severino Ribeiro",
+    "rate": 4.0,
+    "rides": 7,
+    "longitude": -46.4807658,
+    "latitude": -23.6207122,
+    "email": "vribeiro@hotmail.com",
+    "phone": 1199546592,
+    "photo": "https://static1.segredosdesalao.com.br/articles/0/18/96/0/@/248090-confira-8-perfis-de-instagram-com-tipos-article_list_block-3.jpg"
+  },
+
+  {
+    "id": 4,
+    "name": "Marli Sarah Tereza Fernandes",
+    "rate": 4.9,
+    "rides": 6,
+    "longitude": -46.6386275,
+    "latitude": -23.5039492,
+    "email": "marlitereza@hotmail.com",
+    "phone": 11999875643,
+    "photo": "https://storage.alboom.ninja/sites/2851/albuns/377747/foto_perfil_profissional_medico_consultorio_hospital_albert_einstein-3.jpg?t=1548277552"
+  },
+
+  {
+    "id": 5,
+    "name": "Cláudia Liz Nascimento",
+    "rate": 4.0,
+    "rides": 7,
+    "longitude": -46.4110576,
+    "latitude": -23.5655958,
+    "email": "liznascimento@gmail.com",
+    "phone": 1198976542,
+    "photo": "https://i.pinimg.com/originals/81/8a/4a/818a4a84f4e45638c2445ce365971a0a.jpg"
+  },
+
+  {
+    "id": 6,
+    "name": "Laís Ester Ribeiro",
+    "rate": 5.0,
+    "rides": 3,
+    "longitude": -46.46109,
+    "latitude": -23.61046,
+    "email": "lribeiro@yahoo.com",
+    "phone": 11979888641,
+    "photo": "https://i.pinimg.com/originals/55/91/80/5591809ff56c527ff1897828d2fb3290.jpg"
+  }
+]
