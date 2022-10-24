@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
-    "start:prod": "set NODE_ENV=production&& nodemon server.js"
+    "start:prod": "set NODE_ENV=production&& nodemon server.js",
+    "create:DB": "node data-dev/import-dev-data.js --import",
+    "delete:DB": "node data-dev/import-dev-data.js --delete"
   },
   "keywords": [
     "api-nodejs"

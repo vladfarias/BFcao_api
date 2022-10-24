@@ -8,7 +8,7 @@ router
 .post(walkerController.createWalker);
 
 router
-.route('/')
+.route('/:id')
 .get(walkerController.getWalker)
 .patch(walkerController.updateWalker)
 .delete(walkerController.deleteWalker);

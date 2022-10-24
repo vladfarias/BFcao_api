@@ -1,6 +1,5 @@
 const User = require('./../models/userModel');
 
-
 exports.getAllUsers = async (req, res)=>{
 
     try{
@@ -86,10 +85,19 @@ exports.updateUser = async (req, res)=>{
 };
 
 
- exports.deleteUser = (req, res)=>{
-    console.log(req.message);
-    res.status(500).json({
-        status: 'error',
-        message:'This route is beeing buildin up...'
-    })
+ exports.deleteUser = async (req, res)=>{
+
+    try{
+        const user = await User.findByIdAndDelete(req.params.id)
+        res.status(204).json({
+            status: 'success',
+            data: null
+        })
+
+    }catch(err){
+        res.status(404).json({
+            status: 'fail',
+            message: `Bad request ${err}`
+        });
+    };   
 };

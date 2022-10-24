@@ -88,10 +88,19 @@ exports.updateWalker = async (req, res)=>{
 };
 
 
- exports.deleteWalker = (req, res) =>{
-    console.log(req.message);
-    res.status(500).json({
-        status: 'error',
-        message:'This route is beeing buildin up...'
+ exports.deleteWalker = async (req, res) =>{
+    
+    try{
+        const walker = await Walker.findByIdAndDelete(req.params.id)
+        res.status(204).json({
+            status: 'success',
+            data: null
         })
+        
+    }catch(err){
+        res.status(404).json({
+            status: 'fail',
+            message: `Bad request ${err}`
+        })
+    };
 };

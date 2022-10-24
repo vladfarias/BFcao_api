@@ -20,7 +20,7 @@ const walkerSchema = new mongoose.Schema({
         default: 5.0
     },
 
-    ride:{
+    rides:{
         type: Number,
         default: 0
     },

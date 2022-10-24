@@ -20,6 +20,12 @@ const dogSchema = new mongoose.Schema({
         trim: true
     },
 
+    sex:{
+        type: String,
+        required: [true, 'A dog sex must be informed'],    
+        trim: true
+    },
+
     photo:{
         type: String,
         trim: true
@@ -49,8 +55,8 @@ const userSchema = new mongoose.Schema({
         trim: true
     },
 
-    cep:{
-        type: Number,    
+    zipcode:{
+        type: String,    
         trim: true
     },
 
@@ -83,7 +89,7 @@ const userSchema = new mongoose.Schema({
         trim: true
     },
 
-    dog: [dogSchema]
+    dogs: [dogSchema]
 });
 
 const User = mongoose.model('User', userSchema);
