@@ -62,13 +62,13 @@ const userSchema = new mongoose.Schema({
 
     adress:{
         type: String,
-        required: [true, 'An adress must be informed'],    
+        // required: [true, 'An adress must be informed'],    
         trim: true
     },
 
     latitude:{
         type: Number,
-        required: [true, 'A latitude must be informed'],    
+        // required: [true, 'A latitude must be informed'],    
         trim: true
     },
 
