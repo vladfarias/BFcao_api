@@ -4,25 +4,25 @@ const dogSchema = new mongoose.Schema({
 
     name:{
         type: String,
-        required: [true, 'A dog name must be informed'],    
+        // required: [true, 'A dog name must be informed'],    
         trim: true
     },
 
     breed:{
         type: String,
-        required: [true, 'A dog breed must be informed'],    
+        // required: [true, 'A dog breed must be informed'],
         trim: true
     },
 
     age:{
         type: Number,
-        required: [true, 'A dog age must be informed'],    
+        // required: [true, 'A dog age must be informed'],
         trim: true
     },
 
     sex:{
         type: String,
-        required: [true, 'A dog sex must be informed'],    
+        // required: [true, 'A dog sex must be informed'],    
         trim: true
     },
 

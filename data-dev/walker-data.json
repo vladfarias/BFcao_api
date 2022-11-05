@@ -8,7 +8,7 @@
     "latitude": -23.6162316,
     "email": "lbrito@gmail.com",
     "phone": 1196596336,
-    "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvaZRO4e-ZPGMQzFCsQGELsZXkMV3czmowFdFAKY1YdpyVbUWANW-7zkk1jiBmC9i20_o&usqp=CAU"
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvaZRO4e-ZPGMQzFCsQGELsZXkMV3czmowFdFAKY1YdpyVbUWANW-7zkk1jiBmC9i20_o&usqp=CAU"
   },
 
   {
@@ -20,7 +20,7 @@
     "latitude": -23.4896731,
     "email": "dlcaldeira@gmail.com",
     "phone": 1196546882,
-    "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4vY-iZHyCpXKdMdDuQLOtPz3Wrs2fBpuK7P6B4u062os2l41Dxy2lvcv-X0rnaVCpcno&usqp=CAU"
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4vY-iZHyCpXKdMdDuQLOtPz3Wrs2fBpuK7P6B4u062os2l41Dxy2lvcv-X0rnaVCpcno&usqp=CAU"
   },
 
   {
@@ -69,5 +69,29 @@
     "email": "lribeiro@yahoo.com",
     "phone": 11979888641,
     "photo": "https://i.pinimg.com/originals/55/91/80/5591809ff56c527ff1897828d2fb3290.jpg"
+  },
+
+  { 
+    "id": 7,
+    "name": "Vladimir Jesus Farias",
+    "rate": 5.0,
+    "rides": 21,
+    "longitude": -46.65529706079888,
+    "latitude": -23.53201394560226,
+    "email": "vladimir.farias@aluno.faculdadeimpacta.com.br",
+    "phone": 1196536887,
+    "photo": "https://cdn.awsli.com.br/1000x1000/1957/1957185/produto/131728556/homer-simpson-d076686e.jpg"
+  },
+
+  {
+    "id": 8,
+    "name": "Kauê Oliveira Andrade",
+    "rate": 4.2,
+    "rides": 1000,
+    "longitude": -46.747512,
+    "latitude": -23.509565,
+    "email": "kaue.andrade@aluno.faculdadeimpacta.com.br",
+    "phone": 1196552882,
+    "photo": "https://i.pinimg.com/474x/b2/7e/ef/b27eef666590585b41d7b737774aa759.jpg"
   }
 ]
