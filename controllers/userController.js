@@ -60,6 +60,25 @@ exports.getAllUsers = async (req, res)=>{
     };
 };
 
+exports.getUserByEmail = async (req, res)=>{
+
+    try{
+        const user = await User.findOne({
+            email: req.params.email
+        })
+        res.status(200).json({
+            status:'success',
+            data: {user}
+        });
+
+    }catch(err){
+        res.status(400).json({
+            status: 'fail',
+            message: `Bad request ${err}`
+        });
+
+    };
+};
 
 exports.updateUser = async (req, res)=>{
 
