@@ -25,11 +25,11 @@ exports.getAllUsers = async (req, res)=>{
  exports.createUser = async (req, res) =>{
 
     try{
-        const newUSer = await User.create(req.body);
+        const newUser = await User.create(req.body);
         res.status(201).json({
             status: 'success',
             data:{
-                user: newUSer
+                user: newUser
             }
         });
 

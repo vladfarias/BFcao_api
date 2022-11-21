@@ -80,7 +80,7 @@ const userSchema = new mongoose.Schema({
 
     phone:{
         type: Number,
-        required: [true, 'A phone must be informed'],    
+        //required: [true, 'A phone must be informed'],    
         trim: true
     },
 
